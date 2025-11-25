@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+
+</head>
+<body>
+
+    <header>
+        <h1>Formulário de Cadastro</h1>
+        <p>Preencha os campos abaixo para cadastro do cliente.</p>
+    </header>
+
+    <form>
+
+        <label for="nome">Nome Completo:</label><br>
+        <input type="text" id="nome" name="nome" placeholder="Seu nome aqui"><br><br>
+
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="seu.email@exemplo.com"><br><br>
+
+
+        <label for="senha">Senha:</label><br>
+        <input type="password" id="senha" name="senha" placeholder="********"><br><br>
+
+
+        <label for="idade">Sua Idade:</label><br>
+        <input type="number" id="idade" name="idade" min="18" max="99"><br><br>
+
+
+        <p>Qual peça você tem interesse?</p>
+        <input type="radio" id="Amigurumi" name="genero_filme" value="Amigurumi">
+        <label for="acao">Amigurumi</label><br>
+        <input type="radio" id="Sousplat" name="genero_filme" value="Sousplat">
+        <label for="comedia">Sousplat</label><br>
+        <input type="radio" id="drama" name="genero_filme" value="drama">
+        <label for="drama">Bolsas</label><br><br>
+
+ <label for="mensagem">Qual cor deseja:</label><br>
+        <textarea id="mensagem" name="mensagem" rows="5" cols="40" placeholder="Digite sua mensagem aqui..."></textarea><br><br>
+
+        
+        <label for="mensagem">Sua Mensagem:</label><br>
+        <textarea id="mensagem" name="mensagem" rows="5" cols="40" placeholder="Digite sua mensagem aqui..."></textarea><br><br>
+
+        <button type="submit">Enviar Formulário</button>
+        <button type="reset">Limpar Campos</button>
+    </form>
+
+    <footer>
+        <p>Obrigado por seu contato!</p>
+    </footer>
+
+</body>
+</html>

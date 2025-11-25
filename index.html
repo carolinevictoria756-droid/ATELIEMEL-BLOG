@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ateliê Mel</title>
+  <link rel="stylesheet" href="style.css">
+ 
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+<header>
+  <div class="interface">
+    <div class="logotopo">
+      <img src="C:\Users\Ultra\Desktop\Trabalho Desen\Logo.png" alt="Logo Ateliê Mel" class="logo">
+    </div>
+
+    <nav>
+      <ul class="menu">
+        <li><a href="#home">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#produtos">Produtos</a></li>
+        <li><a href="#contato">Redes Sociais</a></li>
+        <li><a href="#formulario">Formulário</a></li>
+        <li><a href="#Tutorial">Tutorial</a></li>
+        <li><a href="https://wa.me/5511952922580" target="_blank" class="btn">Contato</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+    <br> <br> <br> <br> <br> 
+  <!-- Banner -->
+
+<section id="home" class="banner">
+    <h1>Ateliê Mel</h1>
+    <!-- parágrafo centralizado com texto para animação -->
+    <p id="typed" class="typed" data-text="Peças de crochê exclusivas e personalizadas, feitas à mão com carinho."></p>
+</section>
+<!-- ...existing code... -->
+
+<!-- adiciona o script de digitação antes do fechamento do body -->
+<script>
+/* efeito máquina de escrever simples */
+document.addEventListener('DOMContentLoaded', () => {
+  const el = document.getElementById('typed');
+  if (!el) return;
+  const text = el.dataset.text || '';
+  const speed = 40; // ms por caractere (ajuste)
+  let i = 0;
+
+  function type() {
+    if (i <= text.length) {
+      el.textContent = text.slice(0, i);
+      i++;
+      setTimeout(type, speed);
+    } else {
+      // opcional: piscar o cursor final via classe CSS
+      el.classList.add('typed-done');
+    }
+  }
+
+  type();
+});
+</script>
+
+
+  <!-- Sobre -->
+  <section id="sobre" class="sobre">
+    <h3>Sobre o Ateliê</h3>
+     <div class="container">
+    <p> Ateliê Mel nasceu do amor pelo crochê e pela arte de criar peças únicas.<br> 
+       Cada detalhe é feito à mão, com dedicação e carinho, para tornar seu dia mais especial. <br>
+    O nome "Mel" é em homenagem a nossa cachorrinha que nos traz alegria diariamente.  </p> 
+            <img src="C:\Users\Ultra\Desktop\Trabalho Desen\sobre.jpeg" alt="sobre" style="width: 200px; height: auto;" class="urso">
+    </div>
+
+
+
+  </section>
+
+  <!-- Produtos -->
+  <section id="produtos" class="produtos">
+    <h1>Nossos Produtos</h1>
+            <div class="grid">
+      <div class="card">
+        <img src="C:\Users\Ultra\Desktop\Trabalho Desen\amigurumi.jpg" alt="Produto 1">
+        <h4>Amigurumi</h4>
+        <p>Peças fofas e colecionáveis.</p>
+      </div>
+      <div class="card">
+        <img src="C:\Users\Ultra\Desktop\Trabalho Desen\Sousplat.jpg" alt="Produto 2">
+        <h4>Decoração</h4>
+        <p>Tapetes, sousplats e muito mais.</p>
+      </div>
+      <div class="card">
+        <img src="C:\Users\Ultra\Desktop\Trabalho Desen\bolsa.png" alt="Produto 3">
+        <h4>Acessórios</h4>
+        <p>Bolsa, tiaras e detalhes charmosos.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+
+<section id="contato" class="contato">
+  <h1>Redes Sociais</h1>
+
+  <div class="contact-whatsapp">
+    <a href="https://wa.me/5511952922580" target="_blank" rel="noopener" title="Falar no WhatsApp">
+      <img src="whatsapp.png" alt="WhatsApp Ateliê Mel" class="whatsapp-btn">
+    </a>
+    <p>Ficou com alguma dúvida ou deseja realizar o seu pedido? <br> 
+      Clique no ícone do WhatsApp e fale diretamente conosco. Será um prazer atendê-lo!</p>
+  </div>
+
+<div class="contact-instagram">
+  <a href="https://www.instagram.com/atelie.damell_?igsh=bWpvYTBIZGI2N2p5" target="_blank" rel="noopener" title="Seguir no Instagram">
+      <img src="C:\Users\Ultra\Desktop\Trabalho Desen\logo instagram.jpg" alt="Instagram Ateliê Mel" class="instagram-btn">
+    </a>
+    <p>Quer acompanhar tudo em primeira mão ?  <br> 
+      Siga nosso Instagram e descubra  conteúdos exclusivos todos os dias!
+    </p>
+</div>
+
+</section>
+
+
+  <!-- Formulário -->
+
+ 
+<section id="formulario" class="form-section">
+  <h1>Formulário</h1>
+  <p class="form-text">Preencha as informações solicitadas para cadastro de cliente.</p>
+  <div class="form-cta">
+    <a href="Formulario.html" target="_blank" class="btn form-btn" role="button">Formulário de Cadastro</a>
+  </div>
+</section>
+
+
+  <!-- Tutorial -->
+
+<section id="tutorial" class="tutorial">
+  <h1>Tutoriais</h1>
+
+  <div class="tutorial-grid">
+    <div class="video-aulas">
+      <h2>Vídeo‑aula</h2>
+      <p class="subtitle">Vídeo aula para aprender alguns modelos.</p>
+
+      <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/u_sjJYBcvek?si=Jm6v2esJCfHOBHu6" title="YouTube video 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+
+     
+    <aside class="apostilas">
+      <h2>Apostilas</h2>
+      <p class="subtitle">Apostilas e materiais para download.</p>
+
+      <div class="pdf-cta">
+        <a href="PDFS/Bonitinho.pdf" download="Bonitinho.pdf" class="pdf-btn">Baixar Apostila: Bonitinho.pdf</a>
+      </div>
+    </aside>
+  </div>
+</section>
+
+
+ 
+  <!-- Rodapé -->
+  <footer>
+    <p>© 2025 Ateliê Mell - Todos os direitos reservados</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,115 @@
+site
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Página Estruturada</title>
+</head>
+<body>
+    <header>
+        <h1>Meu Blog de Tecnologia Simples</h1>
+        <p>As últimas notícias e dicas sobre o mundo da tecnologia.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Artigos</a></li>
+            <li><a href="#">Sobre Nós</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Bem-vindo ao Nosso Blog!</h2>
+        <p>Aqui você encontra informações descomplicadas sobre tecnologia.
+           Navegue pelos nossos artigos para aprender mais.</p>
+        <aside>
+            <h3>Artigos Populares</h3>
+            <ul>
+                <li><a href="#">O Futuro da Inteligência Artificial</a></li>
+                <li><a href="#">Dicas de Produtividade com Ferramentas Digitais</a></li>
+            </ul>
+            <p>Siga-nos nas redes sociais!</p>
+        </aside>
+
+        <h3>Quer receber novidades?</h3>
+        <p>Clique no botão abaixo para se inscrever na nossa newsletter.</p>
+
+        <button>Assinar Newsletter</button>
+
+    </main>
+    <footer>
+        <p>&copy; 2024 Meu Blog de Tecnologia. Todos os direitos reservados.</p>
+        <p>Desenvolvido por Alunos de Programação.</p>
+    </footer>
+
+</body>
+</html>
+
+------------------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Contato Simples</title>
+</head>
+<body>
+
+    <header>
+        <h1>Formulário de Contato</h1>
+        <p>Preencha os campos abaixo para entrar em contato conosco.</p>
+    </header>
+
+    <form>
+
+        <label for="nome">Nome Completo:</label><br>
+        <input type="text" id="nome" name="nome" placeholder="Seu nome aqui"><br><br>
+
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="seu.email@exemplo.com"><br><br>
+
+
+        <label for="senha">Senha:</label><br>
+        <input type="password" id="senha" name="senha" placeholder="********"><br><br>
+
+
+        <label for="idade">Sua Idade:</label><br>
+        <input type="number" id="idade" name="idade" min="18" max="99"><br><br>
+
+
+        <p>Qual seu gênero favorito de filme?</p>
+        <input type="radio" id="acao" name="genero_filme" value="acao">
+        <label for="acao">Ação</label><br>
+        <input type="radio" id="comedia" name="genero_filme" value="comedia">
+        <label for="comedia">Comédia</label><br>
+        <input type="radio" id="drama" name="genero_filme" value="drama">
+        <label for="drama">Drama</label><br><br>
+
+
+        <p>Quais linguagens de programação você conhece?</p>
+        <input type="checkbox" id="python" name="linguagem" value="python">
+        <label for="python">Python</label><br>
+        <input type="checkbox" id="java" name="linguagem" value="java">
+        <label for="java">Java</label><br>
+        <input type="checkbox" id="html_css" name="linguagem" value="html_css">
+        <label for="html_css">HTML/CSS</label><br><br>
+
+
+        <label for="mensagem">Sua Mensagem:</label><br>
+        <textarea id="mensagem" name="mensagem" rows="5" cols="40" placeholder="Digite sua mensagem aqui..."></textarea><br><br>
+
+        <button type="submit">Enviar Formulário</button>
+        <button type="reset">Limpar Campos</button>
+    </form>
+
+    <footer>
+        <p>Obrigado por seu contato!</p>
+    </footer>
+
+</body>
+</html>

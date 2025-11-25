@@ -1,0 +1,443 @@
+
+body {
+   color: #050405;
+   background-color:rgb(237, 228, 243);
+   font-family: Arial, Helvetica, sans-serif; 
+   margin: 15px 40px;
+}
+
+/* ...existing code... */
+.interface {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #d6c2e4;
+  width: 100%;
+  z-index: 90;
+  display: flex;
+  flex-direction: column; /* logo acima do menu */
+  align-items: center;
+  padding: 8px 16px;
+  gap: 8px;
+}
+
+.logotopo .logo {
+  display: block;
+  width: 170px;    /* tamanho do logo — ajuste (ex.: 100-140px) */
+  max-width: 90%;
+  height: auto;
+}
+
+/* menu centralizado e botões menores */
+.menu {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.menu a {
+  font-size: 16px;
+  padding: 6px 12px;
+  color: rgb(87, 41, 87);
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 8px;
+}
+
+/* estilo do botão contato menor */
+.menu .btn {
+  background: #fff;
+  color: rgb(87, 41, 87);
+  padding: 6px 10px;
+  border-radius: 20px;
+  border: 1px solid rgb(87, 41, 87);
+}
+/* ...existing code... */
+
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    align-items: baseline;
+    padding: 0.1rem
+   
+}
+
+button{
+    padding: 10px 10px;
+    font-size: 10px;
+    background-color: white;
+    border: 1px solid rgb(87, 41, 87);
+    border-radius: 24px;
+    cursor: pointer;
+    color: white;
+    transition: 0.5s;
+    outline: 0;
+    }
+
+
+/* ---- Barra ---*/
+a{
+    
+    color: rgb(166, 110, 240);
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 40px;
+    font-weight: 700;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+
+
+}
+
+/* --- Sobre --- */
+
+
+.container{
+    display: block;
+    text-align:right;
+}
+
+.center{
+    text-align: center;
+}
+
+h1{
+    color: rgb(98, 52, 114);
+    text-align: center;
+    font-family: 'Satisfy';
+    font-size: 50px;
+    }
+
+    header .Contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #b359f0;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+
+
+/* Parágrafo centralizado e estilo da "máquina de escrever" */
+.banner .typed {
+  text-align:center;
+  margin: 8px auto 0;
+  max-width: 900px;
+  font-size: 25px;              /* ajuste conforme preferir */
+  color: #121113;
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  padding-right: .25em;         /* espaço para o cursor */
+}
+
+/* cursor piscante após terminar a digitação */
+.banner .typed.typed-done::after {
+  content: '';
+  display: inline-block;
+  width: 2px;
+  height: 1em;
+  background: #5a2b6a;
+  margin-left: .25em;
+  vertical-align: middle;
+  animation: blink 0.8s steps(1) infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+
+     
+        /* --- ESTILOS GERAIS (Exemplo) --- */
+        
+
+        h2 {
+            
+            margin-bottom: 30px;
+            color: rgb(207, 173, 121);
+        }
+
+        h3 {
+            color: rgb(98, 52, 114);
+            text-align: center;
+            font-family: 'Satisfy';
+            font-size: 50px; 
+
+        }
+
+        .urso{
+            float: right;
+            width: 500px;
+            margin-left: 55px;
+
+
+
+        }
+        .container{
+            display: flex;
+            color: rgb(2, 2, 2);
+            text-align: center;
+            font-size: 25px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+        }
+
+        /* --- ESTILOS PRINCIPAIS PARA O ALINHAMENTO LADO A LADO --- */
+        
+        /* O container Flexbox que organiza os cards */
+        .grid {
+            /* 1. Ativa o Flexbox para alinhar os itens horizontalmente */
+            display: flex;
+            /* 2. Permite que os cards quebrem para a linha de baixo em telas menores */
+            flex-wrap: nowrap;
+            /* 3. Adiciona um espaço entre os cards (tanto na horizontal quanto na vertical) */
+            gap: 50px;
+            /* 4. Centraliza o grupo de cards na seção */
+            justify-content: center;
+            padding: 20px; /* Espaçamento interno */
+            max-width: 500px; /* Limita a largura do container */
+            margin: 0 auto; /* Centraliza o container na página */
+        }
+
+        /* Estilos de cada item (card) */
+        .card {
+            /* 5. Define que cada card deve ocupar cerca de um terço da largura */
+            /* Isso permite 3 cards por linha, descontando o espaço do 'gap' */
+            max-width: calc(33.33% - 14px);
+            /* Garante que os cards não encolham ou cresçam de forma indesejada */
+            flex-grow: 0;
+            flex-shrink: 0;
+            /* Estilização visual do card (opcional) */
+            background-color: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        
+        /* Estilo da imagem */
+        .card img {
+            width: 100%; /* A imagem ocupa toda a largura do card */
+            height: auto;
+            border-radius: 4px;
+            /* Opcional: Define uma altura padrão e corta o excesso para um visual uniforme */
+            /* height: 200px; */
+            /* object-fit: cover; */
+        }
+
+        /* --- Estilos para Responsividade (Telas Menores) --- */
+        @media (max-width: 768px) {
+            .card {
+                /* Em telas menores, mostraremos 2 cards por linha */
+                /* max-width: calc(50% - 10px); */
+                 /* Para garantir que caibam 2, podemos usar uma porcentagem ligeiramente menor */
+                 max-width: calc(50% - 10px);
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .card {
+                /* Em telas muito pequenas (celular), mostraremos 1 card por linha */
+                max-width: 100%;
+            }
+        }
+/* CONTATO */
+.contact-whatsapp {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 12px 0;
+}
+
+.whatsapp-btn {
+  width: 48px;        /* ajuste o tamanho conforme desejar */
+  height: auto;
+  display: inline-block;
+  border-radius: 8px; /* use 50% para circular */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+  cursor: pointer;
+  border: 0;
+}
+
+.whatsapp-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.18);
+}
+
+.contact-instagram {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 12px 0;
+}
+
+.instagram-btn {
+  width: 48px;        /* ajuste o tamanho conforme desejar */
+  height: auto;
+  display: inline-block;
+  border-radius: 8px; /* use 50% para circular */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+  cursor: pointer;
+  border: 0;
+}
+
+.instagram-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.18);
+}
+
+
+        .Contato.img{
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 10px
+            }
+
+            /* ...formulário... */
+.form-section {
+  text-align: center;
+  padding: 40px 16px;
+}
+
+.form-text {
+  max-width: 720px;
+  margin: 0 auto 18px;
+  font-size: 18px;
+  color: #2b1a35;
+}
+
+.form-cta {
+  display: flex;
+  justify-content: center;
+}
+
+.form-btn {
+  display: inline-block;
+  background: #b359f0;
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: transform .15s ease, box-shadow .15s ease, background .15s;
+  box-shadow: 0 6px 18px rgba(83,40,113,0.12);
+}
+
+.form-btn:hover,
+.form-btn:focus {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 12px 30px rgba(83,40,113,0.2);
+  background: #a04de0;
+  outline: none;
+}
+
+@media (max-width: 480px) {
+  .form-text { font-size: 16px; padding: 0 8px; }
+  .form-btn { padding: 10px 14px; font-size: 15px; }
+}
+
+/* ...TUTORIAIS... */
+.tutorial {
+  padding: 36px 16px;
+  text-align: center;
+}
+
+.tutorial-grid {
+  display: flex;
+  gap: 28px;
+  align-items: flex-start;
+  justify-content: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+/* área de vídeos */
+.video-aulas {
+  flex: 1 1 620px;
+  min-width: 300px;
+}
+
+/* area de apostilas (lado direito) */
+.apostilas {
+  flex: 0 0 320px;
+  min-width: 260px;
+  text-align: center;
+}
+
+/* subtítulo centralizado */
+.subtitle {
+  color: #070707;
+  margin-bottom: 12px;
+}
+
+/* wrapper para iframes responsivos (16:9) */
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 */
+  margin-bottom: 18px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* botão de download centralizado com animação */
+.pdf-cta {
+  display: flex;
+  justify-content: center;
+  margin-top: 18px;
+}
+
+.pdf-btn {
+  display: inline-block;
+  background: #b359f0;
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: transform .18s ease, box-shadow .18s ease, background .18s;
+  box-shadow: 0 8px 22px rgba(83,40,113,0.12);
+}
+
+.pdf-btn:hover, .pdf-btn:focus {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 18px 46px rgba(83,40,113,0.22);
+  background: #9a43e0;
+  outline: none;
+}
+
+/* responsivo */
+@media (max-width: 880px) {
+  .tutorial-grid { flex-direction: column; padding: 0 12px; }
+  .apostilas { order: 2; }
+  .video-aulas { order: 1; }
+}
